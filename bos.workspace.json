@@ -1,3 +1,3 @@
 {
-  "apps": ["./apps/*"]
+  "apps": ["./apps/*", "./dependencies/*"]
 }
