@@ -1,0 +1,16 @@
+name: Deploy Components to Mainnet
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy-mainnet:
+    uses: NEARBuilders/bos-workspace/.github/workflows/deploy.yml@main
+    with:
+      bw-legacy: false
+      deploy-env: "mainnet"
+      app-name: "quickstart"
+      deploy-account-address: quickstart.near
+      signer-account-address: quickstart.near
+      signer-public-key: ed25519:GTZpJWYSkDkwGGLPFDagS2uMeFSP7eVirYXwhQEMdoxj
+    secrets:
+      SIGNER_PRIVATE_KEY: ${{ secrets.SIGNER_PRIVATE_KEY }}

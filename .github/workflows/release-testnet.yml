@@ -1,0 +1,17 @@
+name: Deploy Components to Testnet
+on:
+  push:
+    branches: [develop]
+jobs:
+  deploy-mainnet:
+    uses: NEARBuilders/bos-workspace/.github/workflows/deploy.yml@main
+    with:
+      bw-legacy: false
+      build-env: "testnet"
+      deploy-env: "testnet"
+      app-name: "quickstart"
+      deploy-account-address: quickstart.testnet
+      signer-account-address: quickstart.testnet
+      signer-public-key: ed25519:77s2Mq3D7t53AMgBBFj7kb2cWSWuf1hL53sPgQ5drG9r
+    secrets:
+      SIGNER_PRIVATE_KEY: ${{ secrets.TESTNET_SIGNER_PRIVATE_KEY }}
