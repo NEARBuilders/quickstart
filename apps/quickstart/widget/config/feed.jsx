@@ -1,4 +1,4 @@
-const { Post } = VM.require("buildhub.near/widget/components") || {
+const { Post } = VM.require("${alias_builddao}/widget/components") || {
   Post: () => <></>,
 };
 
@@ -14,7 +14,7 @@ return {
   type: "app",
   routes: {
     all: {
-      path: "buildhub.near/widget/Feed",
+      path: "${alias_builddao}/widget/Feed",
       blockHeight: "final",
       init: {
         name: "All",
@@ -23,7 +23,7 @@ return {
       },
     },
     demo: {
-      path: "buildhub.near/widget/Feed",
+      path: "${alias_builddao}/widget/Feed",
       blockHeight: "final",
       init: {
         name: "Demo",

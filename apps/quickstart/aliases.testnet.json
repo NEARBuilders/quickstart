@@ -1,3 +1,4 @@
 {
-  "contract": "hello.near-examples.testnet"
+  "contract": "hello.near-examples.testnet",
+  "builddao": "builddao.testnet"
 }

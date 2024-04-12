@@ -1,4 +1,4 @@
-const { Button } = VM.require("buildhub.near/widget/components") || {
+const { Button } = VM.require("${alias_builddao}/widget/components") || {
   Button: () => <></>,
 };
 
@@ -61,7 +61,7 @@ const MobileNavigation = styled.div`
   }
 `;
 
-const { href } = VM.require("buildhub.near/widget/lib.url") || {
+const { href } = VM.require("${alias_builddao}/widget/lib.url") || {
   href: () => {},
 };
 
@@ -69,7 +69,7 @@ const NavLink = ({ to, children }) => (
   <Link
     key={to}
     to={href({
-      widgetSrc: "/*__@appAccount__*//widget/app",
+      widgetSrc: "${config_account}/widget/app",
       params: {
         page: to,
       },
@@ -178,7 +178,7 @@ const Navbar = ({ page, routes, ...props }) => (
         <Link
           style={{ flex: 1 }}
           to={href({
-            widgetSrc: "/*__@appAccount__*//widget/app",
+            widgetSrc: "${config_account}/widget/app",
             params: {
               page: "home",
             },
@@ -223,7 +223,7 @@ const Navbar = ({ page, routes, ...props }) => (
       <MobileNavigation>
         <Link
           to={href({
-            widgetSrc: "/*__@appAccount__*//widget/app",
+            widgetSrc: "${config_account}/widget/app",
             params: {
               page: "home",
             },

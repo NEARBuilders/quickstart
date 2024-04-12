@@ -1,3 +1,4 @@
 {
-  "contract": "hello.near-examples.near"
+  "contract": "hello.near-examples.near",
+  "builddao": "buildhub.near"
 }

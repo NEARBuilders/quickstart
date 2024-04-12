@@ -1,11 +1,11 @@
 const { currentPath, page, ...passProps } = props;
 
-const { routes } = VM.require("/*__@appAccount__*//widget/config.feed") ?? {
+const { routes } = VM.require("${config_account}/widget/config.feed") ?? {
   routes: {},
 };
 
 const { SidebarLayout } = VM.require(
-  "/*__@appAccount__*//widget/template.SidebarLayout"
+  "${config_account}/widget/template.SidebarLayout"
 ) || {
   SidebarLayout: () => <></>,
 };

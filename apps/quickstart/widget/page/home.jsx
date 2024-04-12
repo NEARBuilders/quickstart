@@ -1,4 +1,6 @@
-const { Button } = VM.require("buildhub.near/widget/components");
+const { Button } = VM.require("${alias_builddao}/widget/components") || {
+  Button: () => <></>,
+};
 const imageUrl =
   props.imageUrl ??
   JSON.stringify(state.image.url) ??

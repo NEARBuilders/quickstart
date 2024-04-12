@@ -1,11 +1,11 @@
 const { page, tab, ...passProps } = props;
 
-const { routes } = VM.require("/*__@appAccount__*//widget/config.app") ?? {
+const { routes } = VM.require("${config_account}/widget/config.app") ?? {
   routes: {},
 };
 
 const { AppLayout } = VM.require(
-  "/*__@appAccount__*//widget/template.AppLayout"
+  "${config_account}/widget/template.AppLayout"
 ) || {
   AppLayout: () => <></>,
 };
@@ -70,7 +70,7 @@ function Router({ active, routes }) {
       <Widget
         src={src}
         props={{
-          currentPath: `//*__@appAccount__*//widget/app?page=${page}`,
+          currentPath: `/${config_account}/widget/app?page=${page}`,
           page: tab,
           ...passProps,
           ...defaultProps,

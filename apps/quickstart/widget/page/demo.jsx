@@ -1,12 +1,12 @@
 const { currentPath, page, ...passProps } = props;
 
 // require a config in order to for sidebar layout
-const { routes } = VM.require("/*__@appAccount__*//widget/config.demo") ?? {
+const { routes } = VM.require("${config_account}/widget/config.demo") ?? {
   routes: {},
 };
 
 const { SidebarLayout } = VM.require(
-  "/*__@appAccount__*//widget/template.SidebarLayout"
+  "${config_account}/widget/template.SidebarLayout"
 ) || {
   SidebarLayout: () => <></>,
 };
