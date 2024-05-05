@@ -9,9 +9,11 @@
     "dev": "bw ws dev",
     "dev:testnet": "bw ws dev -n testnet",
     "build": "bw ws build",
-    "build:testnet": "bw ws build -n testnet"
+    "build:testnet": "bw ws build -n testnet",
+    "test": "npx playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.43.1",
     "bos-workspace": "^1.0.0-alpha",
     "prettier": "^2.8.8"
   }
