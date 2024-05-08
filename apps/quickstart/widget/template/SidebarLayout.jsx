@@ -51,9 +51,7 @@ const Sidebar = ({ currentPath, page, routes }) => (
             id={k}
             variant={page === k ? "primary" : "outline"}
             href={`${currentPath}&tab=${k}`}
-            className={
-              "justify-content-start fw-medium align-self-stretch w-100"
-            }
+            className={"justify-content-start fw-medium align-self-stretch w-100"}
             linkClassName={"d-flex w-100"}
             style={{
               fontSize: "14px",
