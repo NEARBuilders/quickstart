@@ -83,13 +83,7 @@ const [showMenu, setShowMenu] = useState(false);
 const toggleDropdown = () => setShowMenu(!showMenu);
 
 const SignInOrConnect = () => (
-  <>
-    {context.accountId ? (
-      <Button>Signed in</Button>
-    ) : (
-      <Button>Signed out</Button>
-    )}
-  </>
+  <>{context.accountId ? <Button>Signed in</Button> : <Button>Signed out</Button>}</>
 );
 
 const StyledDropdown = styled.div`
@@ -235,12 +229,7 @@ const Navbar = ({ page, routes, ...props }) => (
             alt="Build DAO Logo"
           />
         </Link>
-        <Button
-          type="icon"
-          variant="outline"
-          className="rounded-2"
-          onClick={toggleDropdown}
-        >
+        <Button type="icon" variant="outline" className="rounded-2" onClick={toggleDropdown}>
           <i style={{ fontSize: 24 }} className="bi bi-list"></i>
         </Button>
       </MobileNavigation>

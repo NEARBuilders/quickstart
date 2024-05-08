@@ -20,7 +20,10 @@ const onBtnClick = () => {
 };
 
 const Main = styled.div`
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI;
 `;
 
 // Render
@@ -44,10 +47,7 @@ return (
           <input placeholder="Store a new greeting" onChange={onInputChange} />
           <button className="btn btn-primary" onClick={onBtnClick}>
             <span hidden={showSpinner}>Save</span>
-            <i
-              className="spinner-border spinner-border-sm"
-              hidden={!showSpinner}
-            ></i>
+            <i className="spinner-border spinner-border-sm" hidden={!showSpinner}></i>
           </button>
         </div>
 

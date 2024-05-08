@@ -4,9 +4,7 @@ const { routes } = VM.require("${config_account}/widget/config.app") ?? {
   routes: {},
 };
 
-const { AppLayout } = VM.require(
-  "${config_account}/widget/template.AppLayout"
-) || {
+const { AppLayout } = VM.require("${config_account}/widget/template.AppLayout") || {
   AppLayout: () => <></>,
 };
 

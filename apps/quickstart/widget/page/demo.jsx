@@ -5,9 +5,7 @@ const { routes } = VM.require("${config_account}/widget/config.demo") ?? {
   routes: {},
 };
 
-const { SidebarLayout } = VM.require(
-  "${config_account}/widget/template.SidebarLayout"
-) || {
+const { SidebarLayout } = VM.require("${config_account}/widget/template.SidebarLayout") || {
   SidebarLayout: () => <></>,
 };
 
