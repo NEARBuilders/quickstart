@@ -1,0 +1,20 @@
+{
+  "account": "quickstart.near",
+  "aliases": ["./aliases.mainnet.json"],
+  "index": "quickstart.near/widget/Index",
+  "overrides": {
+    "testnet": {
+      "account": "quickstart.testnet",
+      "aliases": ["./aliases.testnet.json"],
+      "index": "quickstart.testnet/widget/Index"
+    }
+  },
+  "format": true,
+  "ipfs": {
+    "gateway": "https://ipfs.near.social/ipfs",
+    "uploadApi": "https://ipfs.near.social/add",
+    "uploadApiHeaders":  {
+      "Accept": "application/json"
+    }
+  }
+}

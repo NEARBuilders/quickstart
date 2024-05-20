@@ -180,7 +180,7 @@ const Navbar = ({ page, routes, ...props }) => (
         >
           <img
             style={{ width: 85, objectFit: "cover" }}
-            src="https://ipfs.near.social/ipfs/bafkreihbwho3qfvnu4yss3eh5jrx6uxhrlzdgtdjyzyjrpa6odro6wdxya"
+            src="${ipfs_builddao_logo}"
             alt="Build DAO Logo"
           />
         </Link>

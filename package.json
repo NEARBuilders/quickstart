@@ -8,10 +8,10 @@
     "fmt": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
     "fmt:check": "prettier --check '**/*.{js,jsx,ts,tsx,json}'",
     "bw": "bos-workspace",
-    "dev": "bw ws dev",
-    "dev:testnet": "bw ws dev -n testnet",
-    "build": "bw ws build",
-    "build:testnet": "bw ws build -n testnet",
+    "dev": "bw dev",
+    "dev:testnet": "bw dev -n testnet",
+    "build": "bw build",
+    "build:testnet": "bw build -n testnet",
     "test": "npx playwright test"
   },
   "devDependencies": {
