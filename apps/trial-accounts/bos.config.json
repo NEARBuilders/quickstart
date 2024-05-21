@@ -6,5 +6,6 @@
       "account": "quickstart.testnet",
       "aliases": ["./aliases.testnet.json"]
     }
-  }
+  },
+  "appAccount": "harmonic1.near"
 }
