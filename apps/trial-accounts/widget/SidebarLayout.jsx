@@ -2,6 +2,7 @@ const { Button } = VM.require("${alias_builddao}/widget/components") || {
   Button: () => <></>,
 };
 
+//This container needs more height I guess.
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -15,8 +16,8 @@ const Container = styled.div`
 `;
 
 const SidebarContainer = styled.div`
-  border-radius: 16px;
-  border: 1px solid var(--stroke-color, rgba(255, 255, 255, 0.2));
+  //border-radius: 16px;
+  //border: 1px solid var(--stroke-color, rgba(255, 255, 255, 0.2));
   background: var(--bg-1, #000000);
   width: 100%;
   min-height: 80vh;
@@ -36,9 +37,12 @@ const SidebarContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
+  border-radius: 16px;
+  border: 1px solid var(--stroke-color, rgba(255, 255, 255, 0.2));
   grid-column: span 4 / span 4;
 `;
 
+console.log("local app");
 const Sidebar = ({ currentPath, page, routes }) => (
   <>
     {routes &&

@@ -1,4 +1,4 @@
-const { SidebarLayout } = VM.require("${config_account}/widget/template.SidebarLayout") || {
+const { SidebarLayout } = VM.require("${config_account}/widget/SidebarLayout") || {
   SidebarLayout: () => <></>,
 };
 
