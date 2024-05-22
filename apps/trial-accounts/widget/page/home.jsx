@@ -33,7 +33,9 @@ const config = {
   },
 };
 
-const Root = styled.div``;
+const Root = styled.div`
+  margin-top: -2%
+`;
 
 return (
   <Root>

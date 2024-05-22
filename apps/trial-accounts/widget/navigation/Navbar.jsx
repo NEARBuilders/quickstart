@@ -1,4 +1,4 @@
-const { Button } = VM.require("${alias_builddao}/widget/components") || {
+const { Button } = VM.require("abdullahi3000.near/widget/components.Button") || {
   Button: () => <></>,
 };
 
@@ -12,7 +12,7 @@ const StyledNavbar = styled.div`
   padding: 24px 48px;
   width: 100%;
 
-  background-color: #0b0c14;
+  background-color: #ebeaea;
   border-bottom: 1px solid var(--stroke-color, rgba(255, 255, 255, 0.2));
 
   @media screen and (max-width: 768px) {
@@ -180,7 +180,7 @@ const Navbar = ({ page, routes, ...props }) => (
         >
           <img
             style={{ width: 85, objectFit: "cover" }}
-            src="https://res.cloudinary.com/dtt0cjt51/image/upload/v1711122280/cafg8h33bpq15uugd8ta.png"
+            src="https://res.cloudinary.com/dtt0cjt51/image/upload/v1716377895/harmonic_logoBlue_c6tvie.png"
             alt="Harmonic Logo"
           />
         </Link>

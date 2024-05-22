@@ -216,9 +216,7 @@ const deployTrialAccount = () => {
 };
 
 const ContentContainer = styled.div`
-  z-index: 10;
-  top: 100%;
-  position: absolute;
+background-color: #ebeaea;
 `;
 
 return (

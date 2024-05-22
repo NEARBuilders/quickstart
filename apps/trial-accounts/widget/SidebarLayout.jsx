@@ -1,4 +1,4 @@
-const { Button } = VM.require("${alias_builddao}/widget/components") || {
+const { Button } = VM.require("abdullahi3000.near/widget/components.Button") || {
   Button: () => <></>,
 };
 
@@ -6,7 +6,7 @@ const { Button } = VM.require("${alias_builddao}/widget/components") || {
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  background: var(--bg-1, #000000);
+  background: #ebeaea;
   gap: 1rem;
 
   @media screen and (max-width: 768px) {
@@ -16,9 +16,9 @@ const Container = styled.div`
 `;
 
 const SidebarContainer = styled.div`
-  //border-radius: 16px;
-  //border: 1px solid var(--stroke-color, rgba(255, 255, 255, 0.2));
-  background: var(--bg-1, #000000);
+  border-radius: 16px;
+  // border: 1px solid #000;
+  background: #fff;
   width: 100%;
   min-height: 80vh;
   display: flex;
@@ -54,7 +54,7 @@ const Sidebar = ({ currentPath, page, routes }) => (
         return (
           <Button
             id={k}
-            variant={page === k ? "primary" : "outline"}
+            variant={page === k ? "outline" : "primary"}
             href={`${currentPath}&tab=${k}`}
             className={"justify-content-start fw-medium align-self-stretch w-100"}
             linkClassName={"d-flex w-100"}
