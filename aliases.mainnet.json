@@ -1,4 +1,7 @@
 {
+  "devs": "devs.near",
+  "mob": "mob.near",
   "contract": "hello.near-examples.near",
-  "builddao": "buildhub.near"
+  "builddao": "builddao.near",
+  "old": "buildhub.near"
 }

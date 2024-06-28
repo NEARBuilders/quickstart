@@ -1,4 +1,7 @@
 {
+  "devs": "neardevs.testnet",
+  "mob": "mike.testnet",
   "contract": "hello.near-examples.testnet",
-  "builddao": "builddao.testnet"
+  "builddao": "builddao.testnet",
+  "old": "buildhub.testnet"
 }
