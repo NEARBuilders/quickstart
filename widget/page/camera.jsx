@@ -1,9 +1,6 @@
 const CameraContainer = styled.div`
-  /* width: 600px; */
   height: 600px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  /* width: 300px; */
 `;
 
 // Function to generate a random color
@@ -16,21 +13,8 @@ const getRandomColor = () => {
   return color;
 };
 
-const OverlayComponent = ({ position, getScreenshot }) => (
-  <div
-    style={{
-      backgroundColor: getRandomColor(),
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "100%",
-      width: "100%",
-    }}
-  >
-    <button onClick={getScreenshot} style={{ color: "white" }}>
-      {position}
-    </button>
-  </div>
+const OverlayComponent = ({ position, getScreenshot, toggleFacingMode, facingMode }) => (
+  <Widget src="${config_account}/widget/components.GridItem" props={{ getScreenshot }} />
 );
 
 const createOverlayComponents = () => {
@@ -48,7 +32,9 @@ const createOverlayComponents = () => {
 
   const components = {};
   gridPositions.forEach((position) => {
-    components[position] = (props) => <OverlayComponent key={position} {...props} position={position} />;
+    components[position] = (props) => (
+      <OverlayComponent key={position} {...props} position={position} />
+    );
   });
 
   return components;
@@ -60,7 +46,7 @@ return (
       audio={false}
       screenshotFormat="image/jpeg"
       videoConstraints={{
-        facingMode: "user",
+        facingMode: "environment",
       }}
       overlayComponents={createOverlayComponents()}
     />

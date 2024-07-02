@@ -310,9 +310,9 @@ borsh@1.0.0:
   integrity sha512-fSVWzzemnyfF89EPwlUNsrS5swF5CrtiN4e+h0/lLf4dz2he4L3ndM20PS9wj7ICSkXJe/TQUHdaPTq15b1mNQ==
 
 bos-workspace@^1.0.0-alpha:
-  version "1.0.0-alpha.28"
-  resolved "https://registry.npmjs.org/bos-workspace/-/bos-workspace-1.0.0-alpha.28.tgz#f99e66e39c6062064bbd41d2d09f11ee0523195f"
-  integrity sha512-2MzxRwD5r5TPExVITwshO6S91DTH9Z6aOHXeT9+ROQuSqqE/MBLJ+0TIGhxJeIGHIPxmKmy4F2+qVhqCYUTvJA==
+  version "1.0.0-alpha.29"
+  resolved "https://registry.npmjs.org/bos-workspace/-/bos-workspace-1.0.0-alpha.29.tgz#73dd4d60ee68ed2bd6cb84717d6a36662652080c"
+  integrity sha512-b6Tub66cXBksmMcjVeyOWH6CxPidflf5abATP6kwXyhlgeiuTOGSyZpJbCgk/Tkki9/g9EOmvme1/hNGeWXHLw==
   dependencies:
     "@near-js/providers" "^0.2.1"
     "@near-js/types" "^0.2.0"

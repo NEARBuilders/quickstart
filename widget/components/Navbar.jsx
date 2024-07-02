@@ -86,13 +86,15 @@ const Navbar = ({ routes, currentPage, accountId }) => {
 
   const ViewSourceButton = ({ currentPage }) => (
     <Link
-      to={href({
-        widgetSrc: "${config_index}",
-        params: {
-          page: "inspect",
-          widgetPath: currentPage,
-        },
-      })}
+      to={btoa(
+        href({
+          widgetSrc: "${config_index}",
+          params: {
+            page: "inspect",
+            widgetPath: currentPage,
+          },
+        })
+      )}
     >
       <Button>View Source</Button>
     </Link>
